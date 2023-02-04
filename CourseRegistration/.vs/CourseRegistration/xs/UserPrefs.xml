@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{77BD74B9-A4B6-430C-9BE9-6AC7DB86C438}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/darpansheth/Projects/CourseRegistration/CourseRegistration/Controllers/GeneralController.cs" relfile="Controllers/GeneralController.cs" line="423" column="1" />
+      <Breakpoint file="/Users/darpansheth/Projects/CourseRegistration/CourseRegistration/Controllers/GeneralController.cs" relfile="Controllers/GeneralController.cs" line="423" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.CourseRegistration PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/General/GetInstructorToDelete.cshtml">
+    <Files>
+      <File FileName="Course.cs" />
+      <File FileName="Scripts/app.ts" />
+      <File FileName="Views/General/CreateStudent.cshtml" Line="10" Column="17" />
+      <File FileName="Controllers/GeneralController.cs" Line="422" Column="46" />
+      <File FileName="DTO/StudentDTO.cs" Line="1" Column="1" />
+      <File FileName="DTO/PersonDTO.cs" />
+      <File FileName="Student.cs" Line="7" Column="3" />
+      <File FileName="Person.cs" />
+      <File FileName="wwwroot/js/site.js" />
+      <File FileName="DTO/CourseDTO.cs" />
+      <File FileName="Views/General/Courses.cshtml" />
+      <File FileName="wwwroot/js/app.js" />
+      <File FileName="Models/CoursesViewModel.cs" />
+      <File FileName="DTO/InstructorDTO.cs" Line="1" Column="1" />
+      <File FileName="DTO/StudentCourseDTO.cs" />
+      <File FileName="Views/General/CreateCourse.cshtml" />
+      <File FileName="Views/General/Instructors.cshtml" Line="19" Column="41" />
+      <File FileName="Views/General/CreateInstructor.cshtml" />
+      <File FileName="Views/General/CreateStudentCourse.cshtml" />
+      <File FileName="Models/InstructorsViewModel.cs" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Views/General/Students.cshtml" />
+      <File FileName="StudentCourse.cs" />
+      <File FileName="StudentRegistrationContext.cs" Line="4" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Views/General/GetInstructorToEdit.cshtml" />
+      <File FileName="Views/General/GetStudentToEdit.cshtml" Line="52" Column="11" />
+      <File FileName="Views/General/GetCourseToEdit.cshtml" />
+      <File FileName="Models/StudentsViewModel.cs" Line="1" Column="1" />
+      <File FileName="Views/General/GetInstructorToDelete.cshtml" Line="7" Column="43" />
+      <File FileName="DTO/InstructorDeleteDTO.cs" Line="9" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CourseRegistration" expanded="True">
+            <Node name="CourseRegistration" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Scripts" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="General" expanded="True">
+                  <Node name="GetInstructorToDelete.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

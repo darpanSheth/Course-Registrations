@@ -1,0 +1,8 @@
+﻿@model CourseRegistration.DTO.StudentDTO
+
+<p>Please confirm that you want to delete this Student record. It will also deregister for all the associated courses.</p>
+<br />
+<form asp-action="DeleteStudent" asp-controller="General">
+    <input asp-for="StudentId" hidden />
+    <input type="submit" value="Confirm" />
+</form>

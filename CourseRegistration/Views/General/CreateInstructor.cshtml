@@ -1,0 +1,27 @@
+﻿@model CourseRegistration.DTO.InstructorDTO
+
+<p>Please enter the details below to register a new Instructor</p>
+
+<br />
+<form asp-controller="General" asp-action="SaveInstructor" onsubmit="handleCreateInstructor(event)">
+    <div>
+        <label>Enter Instructor's First Name</label>
+        <input asp-for="FirstName" value=""/>
+    </div><br />
+    <div>
+        <label>Enter Instructor's Last Number</label>
+        <input asp-for="LastName" />
+    </div><br />
+    <div>
+        <label>Enter Instructor's Email Address</label>
+        <input type="email" required asp-for="EmailAddress" />
+    </div>
+    <br />
+    <div>
+        <label>Enter Instructor's assigned courseId</label>
+        <input asp-for="CourseId" />
+    </div>
+    <br />
+
+    <button type="submit">Save</button>
+</form>

@@ -1,0 +1,27 @@
+﻿@model CourseRegistration.DTO.StudentDTO
+
+<p>Please enter the details below to register a new student</p>
+
+<br />
+<form asp-controller="General" asp-action="SaveStudent" onsubmit="handleCreateStudent(event)">
+    <div>
+        <label>Enter Student's First Name</label>
+        <input  asp-for="FirstName" />
+    </div><br />
+    <div>
+        <label>Enter Student's Last Number</label>
+        <input  asp-for="LastName" />
+    </div><br />
+    <div>
+        <label>Enter Student's Email Address</label>
+        <input type="email" required asp-for="EmailAddress" />
+    </div>
+    <br />
+    <div>
+        <label>Enter Student's Phone Number</label>
+        <input asp-for="PhoneNumber" />
+    </div>
+    <br />
+    
+    <button type="submit">Save</button>
+</form>

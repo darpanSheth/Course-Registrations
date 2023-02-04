@@ -1,0 +1,53 @@
+﻿@model CourseRegistration.DTO.InstructorDTO
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div>
+    <h4>Instructor</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.InstructorId)
+
+    <div>
+        @Html.LabelFor(model => model.FirstName)
+        <div>
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.CourseId)
+        <div>
+            @Html.EditorFor(model => model.CourseId)
+            @Html.ValidationMessageFor(model => model.CourseId)
+        </div>
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.LastName)
+        <div>
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.EmailAddress)
+        <div>
+            @Html.EditorFor(model => model.EmailAddress)
+            @Html.ValidationMessageFor(model => model.EmailAddress)
+        </div>
+    </div>
+    <br />
+    <div >
+        <div >
+            <input type="submit" value="Save">
+        </div>
+    </div>
+</div>
+}

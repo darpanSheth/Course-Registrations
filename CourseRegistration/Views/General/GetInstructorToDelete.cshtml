@@ -1,0 +1,8 @@
+﻿@model CourseRegistration.DTO.InstructorDTO
+
+<p>Please confirm that you want to delete this Instructor record</p>
+<br />
+<form asp-action="DeleteInstructor" asp-controller="General">
+    <input asp-for="InstructorId" hidden/>
+    <input type="submit" value="Confirm"/>
+</form>

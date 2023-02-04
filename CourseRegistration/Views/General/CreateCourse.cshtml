@@ -1,0 +1,22 @@
+﻿@model CourseRegistration.DTO.CourseDTO
+
+
+<p>Please enter the details below to register a new course</p>
+
+<br />
+<form  asp-controller="General" asp-action="SaveCourse" onsubmit="handleCreateCourse(event)">
+    <div>
+        <label>Enter a new Course Name</label>
+        <input asp-for="CourseName" />
+    </div><br />
+    <div>
+        <label>Enter a new Course Number</label>
+        <input asp-for="CourseNumber" />
+    </div><br />
+    <div>
+        <label>Enter Course description</label>
+        <input asp-for="Description" />
+    </div>
+    <br />
+    <button type="submit">Save</button>
+</form>

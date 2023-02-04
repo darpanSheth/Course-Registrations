@@ -1,0 +1,15 @@
+﻿@model CourseRegistration.DTO.StudentCourseDTO
+<p>Register a student for an existing Course. Each student can register for as many as available courses.</p><br />
+<form asp-controller="General" asp-action="RegisterStudentForCourse">
+    <div>
+        <label>Enter Student's Id</label>
+        <input required asp-for="StudentId" />
+    </div><br />
+    <div>
+        <label>Enter Course's Id</label>
+        <input required asp-for="CourseId" />
+    </div><br />
+
+    <button type="submit">Save</button>
+</form>
+
