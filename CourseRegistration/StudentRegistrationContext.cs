@@ -6,13 +6,13 @@ namespace CourseRegistration
 {
 	public class StudentRegistrationContext : DbContext
 	{
-        //public StudentRegistrationContext(DbContextOptions<StudentRegistrationContext> options) : base(options)
-        //{
-        //}
+        public StudentRegistrationContext(DbContextOptions<StudentRegistrationContext> options) : base(options)
+        {
+        }
 
-        //public StudentRegistrationContext()
-        //{
-        //}
+        public StudentRegistrationContext()
+        {
+        }
 
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Student> Students { get; set; }
@@ -21,7 +21,21 @@ namespace CourseRegistration
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=CourseRegistrationDB;Persist Security Info=False;User ID=SA;Password=Dardha2@;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False;Connection Timeout=30;");
+
+
+            if (!optionsBuilder.IsConfigured)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+
+
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
+                optionsBuilder.UseSqlServer(connectionString);
+            }
+
+
         }
 
 
